@@ -1,0 +1,429 @@
+{
+  "format": "demo-summary-v2",
+  "scope": "Recorded October 10 desktop run. Workflow report and execution record are included unchanged.",
+  "status": "verified",
+  "seconds": 2002.807,
+  "business_invocations": 1,
+  "exit_code": 0,
+  "generated_numbers": {
+    "order": "PO000001",
+    "invoice": "INV000001"
+  },
+  "transaction": {
+    "transaction_checks": 11,
+    "save_dispatches": 7
+  },
+  "save_counts": {
+    "save_intents": 7,
+    "with_persistence_evidence": 7
+  },
+  "checks": {
+    "source_addresses_after_selection": {
+      "expected": {
+        "billing": "Northstar Office GmbH\nFriedrichstrasse 88\n10117 Berlin\nGermany",
+        "delivery": "Northstar Office Warehouse\nBeusselstrasse 44\n10553 Berlin\nGermany"
+      },
+      "observed": {
+        "billing": "Northstar Office GmbH\nFriedrichstrasse 88\n10117 Berlin\nGermany",
+        "delivery": "Northstar Office Warehouse\nBeusselstrasse 44\n10553 Berlin\nGermany"
+      },
+      "passed": true
+    },
+    "retained_order_header": {
+      "expected": {
+        "number": "PO000001",
+        "date": "Jul 14, 2026",
+        "reference": "WEB-2026-0714-A17",
+        "price_mode": "Net",
+        "vat_mode": "With VAT"
+      },
+      "observed": {
+        "number": "PO000001",
+        "date": "Jul 14, 2026",
+        "reference": "WEB-2026-0714-A17",
+        "price_mode": "Net",
+        "vat_mode": "With VAT"
+      },
+      "passed": true
+    },
+    "order_persistence": {
+      "expected": {
+        "number": "PO000001",
+        "date": "2026-07-14",
+        "external_reference": "WEB-2026-0714-A17",
+        "state": "Open",
+        "total": "678.30"
+      },
+      "observed": {
+        "number": "PO000001",
+        "external_reference": "WEB-2026-0714-A17",
+        "total": "678.30",
+        "state": "Open",
+        "date": "2026-07-14"
+      },
+      "passed": true
+    },
+    "order_content": {
+      "expected": {
+        "number": "PO000001",
+        "order_date": "2026-07-14",
+        "external_reference": "WEB-2026-0714-A17",
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "street": "Friedrichstrasse 88",
+          "postal_code": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "street": "Beusselstrasse 44",
+          "postal_code": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit_net": "250.00",
+            "vat_percent": "19",
+            "discount_percent": "10",
+            "line_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit_net": "40.00",
+            "vat_percent": "19",
+            "discount_percent": "0",
+            "line_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "currency": "EUR",
+        "overall_discount_percent": "0",
+        "shipping_net": "0",
+        "price_mode": "Net",
+        "vat_mode": "With VAT"
+      },
+      "observed": {
+        "number": "PO000001",
+        "order_date": "2026-07-14",
+        "external_reference": "WEB-2026-0714-A17",
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "street": "Friedrichstrasse 88",
+          "postal_code": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "street": "Beusselstrasse 44",
+          "postal_code": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit_net": "250.00",
+            "vat_percent": "19",
+            "discount_percent": "10",
+            "line_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit_net": "40.00",
+            "vat_percent": "19",
+            "discount_percent": "0",
+            "line_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "currency": "EUR",
+        "overall_discount_percent": "0",
+        "shipping_net": "0",
+        "price_mode": "Net",
+        "vat_mode": "With VAT"
+      },
+      "passed": true
+    },
+    "invoice_proposed_header_before_save": {
+      "expected": {
+        "number": "INV000001",
+        "date": "Oct 10, 2026",
+        "reference": "WEB-2026-0714-A17",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "order_date": "Jul 14, 2026",
+        "service_date": "Oct 10, 2026"
+      },
+      "observed": {
+        "number": "INV000001",
+        "date": "Oct 10, 2026",
+        "reference": "WEB-2026-0714-A17",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "order_date": "Jul 14, 2026",
+        "service_date": "Oct 10, 2026"
+      },
+      "passed": true
+    },
+    "invoice_content": {
+      "expected": {
+        "number": "INV000001",
+        "order_date": "2026-07-14",
+        "external_reference": "WEB-2026-0714-A17",
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "street": "Friedrichstrasse 88",
+          "postal_code": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "street": "Beusselstrasse 44",
+          "postal_code": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit_net": "250.00",
+            "vat_percent": "19",
+            "discount_percent": "10",
+            "line_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit_net": "40.00",
+            "vat_percent": "19",
+            "discount_percent": "0",
+            "line_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "currency": "EUR",
+        "overall_discount_percent": "0",
+        "shipping_net": "0",
+        "price_mode": "Net",
+        "vat_mode": "With VAT"
+      },
+      "observed": {
+        "number": "INV000001",
+        "order_date": "2026-07-14",
+        "external_reference": "WEB-2026-0714-A17",
+        "billing": {
+          "recipient": "Northstar Office GmbH",
+          "street": "Friedrichstrasse 88",
+          "postal_code": "10117",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "delivery": {
+          "recipient": "Northstar Office Warehouse",
+          "street": "Beusselstrasse 44",
+          "postal_code": "10553",
+          "city": "Berlin",
+          "country": "Germany"
+        },
+        "items": [
+          {
+            "sku": "CHR-ERG-01",
+            "description": "Ergonomic Desk Chair",
+            "quantity": "2",
+            "unit_net": "250.00",
+            "vat_percent": "19",
+            "discount_percent": "10",
+            "line_net": "450.00"
+          },
+          {
+            "sku": "MAT-DESK-02",
+            "description": "Anti-Fatigue Desk Mat",
+            "quantity": "3",
+            "unit_net": "40.00",
+            "vat_percent": "19",
+            "discount_percent": "0",
+            "line_net": "120.00"
+          }
+        ],
+        "totals": {
+          "net": "570.00",
+          "vat": "108.30",
+          "gross": "678.30"
+        },
+        "currency": "EUR",
+        "overall_discount_percent": "0",
+        "shipping_net": "0",
+        "price_mode": "Net",
+        "vat_mode": "With VAT"
+      },
+      "passed": true
+    },
+    "invoice_proposed_header_after_reopen": {
+      "expected": {
+        "number": "INV000001",
+        "date": "Oct 10, 2026",
+        "reference": "WEB-2026-0714-A17",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "order_date": "Jul 14, 2026",
+        "service_date": "Oct 10, 2026"
+      },
+      "observed": {
+        "number": "INV000001",
+        "date": "Oct 10, 2026",
+        "reference": "WEB-2026-0714-A17",
+        "price_mode": "Net",
+        "vat_mode": "With VAT",
+        "order_date": "Jul 14, 2026",
+        "service_date": "Oct 10, 2026"
+      },
+      "passed": true
+    },
+    "invoice_payment": {
+      "expected": {
+        "number": "INV000001",
+        "method": "Bank Transfer",
+        "paid": true,
+        "date": "2026-07-18",
+        "amount": "678.30"
+      },
+      "observed": {
+        "number": "INV000001",
+        "method": "Bank Transfer",
+        "paid": true,
+        "date": "2026-07-18",
+        "amount": "678.30"
+      },
+      "passed": true
+    },
+    "invoice_persistence": {
+      "expected": {
+        "number": "INV000001",
+        "external_reference": "WEB-2026-0714-A17",
+        "paid": true,
+        "total": "678.30"
+      },
+      "observed": {
+        "number": "INV000001",
+        "external_reference": "WEB-2026-0714-A17",
+        "total": "678.30",
+        "paid": true
+      },
+      "passed": true
+    },
+    "order_open": {
+      "expected": {
+        "number": "PO000001",
+        "state": "Open",
+        "external_reference": "WEB-2026-0714-A17",
+        "total": "678.30"
+      },
+      "observed": {
+        "number": "PO000001",
+        "external_reference": "WEB-2026-0714-A17",
+        "total": "678.30",
+        "state": "Open"
+      },
+      "passed": true
+    },
+    "invoice_order_linkage": {
+      "expected": {
+        "invoice_number": "INV000001",
+        "order_number": "PO000001",
+        "order_date": "2026-07-14",
+        "external_reference": "WEB-2026-0714-A17"
+      },
+      "observed": {
+        "invoice_number": "INV000001",
+        "order_number": "PO000001",
+        "order_date": "2026-07-14",
+        "external_reference": "WEB-2026-0714-A17"
+      },
+      "passed": true
+    }
+  },
+  "original_files_sha256": {
+    "workflow-report.json": "49c52f64a3a6f8b48092e4872ef8f45e70c82b161f0fbfc385c4a4429e29690b",
+    "execution.json": "efcbdf98ef7cea93a6d788e683d2a0a305e78de39216a3cf9fc754d108dac0fc"
+  },
+  "source_updates_after_recorded_run": {
+    "scope": "Transaction steps are unchanged. Later revisions simplify wording, CLI options and report metadata; the execution record retains the original module hashes.",
+    "files": {
+      "src/tjm/__init__.py": {
+        "recorded_sha256": "e3778c4c6cc348566f51d24d168dfe6996faeb2c8de32c4942d6fc3275d79ae0",
+        "current_sha256": "dfe8b078d03de315531d9ec4000e496844dfc01920f6a6b62fe11aa3e8eae4db"
+      },
+      "src/tjm/cli.py": {
+        "recorded_sha256": "612db5d36263ce34ddbd0df9651e27a0172953e6b1a6685d1efd586d5fbc3875",
+        "current_sha256": "37c9ae930973d31de870df0e9195afa1be8d49b67cb0c503ed451a8e1938d4e2"
+      },
+      "src/tjm/product_workflow.py": {
+        "recorded_sha256": "a02b525acf88dfd85c0287f60a4aae42027f4c6c9dbcca933a5917c34214dc83",
+        "current_sha256": "c86ceb65a0207c435d3eb1442131af77752f5b28ecf01f5d5db934f0efdfb8a6"
+      },
+      "src/tjm/workflow.py": {
+        "recorded_sha256": "9122dbadbbdc9ae632e5996042a2bc5833f1fd393bff106d23ee63f6e020c84b",
+        "current_sha256": "5a1e867457678acbeb8cc4dbacb9d576516e404417b99ac8e33f091bfed1eeb1"
+      },
+      "src/tjm/workflow_report.py": {
+        "recorded_sha256": "4feddd450822a17b5ea8c9d9c5d07e6da63a6e482217627cff69952ca208245c",
+        "current_sha256": "6c8cf168e4486e31d2974881d97d636a021676887207ba81e1520b09c2b769c2"
+      }
+    }
+  },
+  "workarounds": {
+    "fakturama_version": "2.2.0",
+    "email": "The demo uses .com instead of the original .test email; other business values are unchanged.",
+    "payment_dropdown": "A missing payment method is created before opening New Contact.",
+    "delivery_address": "Order delivery text uses the warehouse recipient and address; its Invoice inherits it."
+  },
+  "reference_environment_test_result": {
+    "tests_passed": 1342,
+    "test_skips": 0,
+    "test_summary": "1342 passed in 179.52s (0:02:59)",
+    "ruff_passed": true,
+    "doctor_passed": true,
+    "original_cli_extraction_status": "validated",
+    "original_email_preserved": "marta.klein@example.test",
+    "scope": "Recorded result in the reference environment.",
+    "environment": {
+      "platform": "macOS ARM",
+      "python": "3.11.16",
+      "tesseract": "5.5.0",
+      "dependencies": "uv.lock with ai and desktop extras",
+      "dependency_versions": {
+        "pydantic": "2.13.5",
+        "Pillow": "12.3.0",
+        "numpy": "2.4.6"
+      }
+    }
+  }
+}

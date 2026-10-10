@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.2
+Build-Jdk-Spec: 17
+Bundle-ManifestVersion: 2
+Bundle-Name: Icons
+Bundle-SymbolicName: com.sebulli.fakturama.resources.icons
+Bundle-Version: 2.2.0.202605290905
+Bundle-Vendor: SEBULLI
+Fragment-Host: com.sebulli.fakturama.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+

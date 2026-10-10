@@ -1,0 +1,105 @@
+{
+  "role": "AXWindow",
+  "title": "",
+  "value": null,
+  "bounds": {
+    "x": 952.0,
+    "y": 354.0,
+    "width": 86.0,
+    "height": 15.0
+  },
+  "enabled": null,
+  "actions_code": 0,
+  "actions": [
+    "AXRaise"
+  ],
+  "child_count": 1,
+  "children": [
+    {
+      "role": "AXScrollArea",
+      "title": null,
+      "value": null,
+      "bounds": {
+        "x": 952.0,
+        "y": 354.0,
+        "width": 86.0,
+        "height": 15.0
+      },
+      "enabled": null,
+      "actions_code": 0,
+      "actions": [
+        "AXScrollLeftByPage",
+        "AXScrollRightByPage",
+        "AXScrollUpByPage",
+        "AXScrollDownByPage"
+      ],
+      "child_count": 1,
+      "children": [
+        {
+          "role": "AXTable",
+          "title": null,
+          "value": null,
+          "bounds": {
+            "x": 951.0,
+            "y": 353.0,
+            "width": 88.0,
+            "height": 17.0
+          },
+          "enabled": true,
+          "actions_code": 0,
+          "actions": [],
+          "child_count": 2,
+          "children": [
+            {
+              "role": "AXRow",
+              "title": null,
+              "value": null,
+              "bounds": {
+                "x": 952.0,
+                "y": 354.0,
+                "width": 86.0,
+                "height": 15.0
+              },
+              "enabled": null,
+              "actions_code": 0,
+              "actions": [],
+              "child_count": 1,
+              "children": [
+                {
+                  "role": "AXStaticText",
+                  "title": null,
+                  "value": "Tax-free (0.0%)",
+                  "bounds": {
+                    "x": 952.0,
+                    "y": 354.0,
+                    "width": 85.0,
+                    "height": 14.0
+                  },
+                  "enabled": true,
+                  "actions_code": 0,
+                  "actions": []
+                }
+              ]
+            },
+            {
+              "role": "AXColumn",
+              "title": null,
+              "value": null,
+              "bounds": {
+                "x": 952.0,
+                "y": 354.0,
+                "width": 86.0,
+                "height": 15.0
+              },
+              "enabled": null,
+              "actions_code": 0,
+              "actions": [],
+              "child_count": 0,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

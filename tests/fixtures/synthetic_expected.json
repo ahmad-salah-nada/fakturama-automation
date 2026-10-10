@@ -1,0 +1,740 @@
+{
+  "one_row_unpaid": {
+    "raw": {
+      "external_reference": "ALT-2026-0803-X09",
+      "order_date": "2026-08-03",
+      "currency": "EUR",
+      "customer": {
+        "company": "Harbor Studio Ltd",
+        "contact_name": "Lena Weber",
+        "first_name": null,
+        "last_name": null,
+        "alias": "HARBOR-MAIN",
+        "billing": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "lena.weber@example.test",
+        "telephone": "+49 351 1230 450",
+        "source_customer_id": "CLIENT-0024"
+      },
+      "payment": {
+        "method": "Credit Card",
+        "status": "UNPAID",
+        "date": null,
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "LMP-TASK-77",
+          "description": "Task Lamp",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "25.00",
+          "vat_percent": "19",
+          "discount_percent": "0",
+          "line_net": "100.00"
+        }
+      ],
+      "totals": {
+        "net": "100.00",
+        "vat": "19.00",
+        "gross": "119.00"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "validated",
+    "first_name": "Lena",
+    "last_name": "Weber",
+    "product_gross": [
+      "29.75"
+    ],
+    "paid_amount": null
+  },
+  "three_rows_mixed_vat": {
+    "raw": {
+      "external_reference": "PO-2026-0902-B32",
+      "order_date": "2026-09-02",
+      "currency": "EUR",
+      "customer": {
+        "company": "Grove Workshop GmbH",
+        "contact_name": "Jonas Meyer",
+        "first_name": null,
+        "last_name": null,
+        "alias": "GROVE-HQ",
+        "billing": {
+          "recipient": "Grove Workshop GmbH",
+          "street": "Parkstrasse 21",
+          "postal_code": "50667",
+          "city": "Cologne",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Grove Storage Depot",
+          "street": "Hafenweg 9",
+          "postal_code": "50735",
+          "city": "Cologne",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "jonas.meyer@example.test",
+        "telephone": "+49 221 9800 622",
+        "source_customer_id": "ACCOUNT-0871"
+      },
+      "payment": {
+        "method": "SEPA Direct Debit",
+        "status": "PAID",
+        "date": "2026-09-06",
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "BND-PACK-88",
+          "description": "Binder Pack",
+          "quantity": "5",
+          "unit": "pcs",
+          "unit_net": "12.00",
+          "vat_percent": "19",
+          "discount_percent": "0",
+          "line_net": "60.00"
+        },
+        {
+          "sku": "PAD-SKETCH-90",
+          "description": "Sketch Pad",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "15.00",
+          "vat_percent": "7",
+          "discount_percent": "0",
+          "line_net": "60.00"
+        },
+        {
+          "sku": "CAB-STOR-06",
+          "description": "Storage Cabinet",
+          "quantity": "2",
+          "unit": "pcs",
+          "unit_net": "100.00",
+          "vat_percent": "19",
+          "discount_percent": "10",
+          "line_net": "180.00"
+        }
+      ],
+      "totals": {
+        "net": "300.00",
+        "vat": "49.80",
+        "gross": "349.80"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "validated",
+    "first_name": "Jonas",
+    "last_name": "Meyer",
+    "product_gross": [
+      "14.28",
+      "16.05",
+      "119.00"
+    ],
+    "paid_amount": "349.80"
+  },
+  "repeated_sku": {
+    "raw": {
+      "external_reference": "SHOP-2026-1010-R55",
+      "order_date": "2026-10-10",
+      "currency": "EUR",
+      "customer": {
+        "company": "Market Systems AG",
+        "contact_name": "Pia Schulz",
+        "first_name": null,
+        "last_name": null,
+        "alias": "MARKET-LEIPZIG",
+        "billing": {
+          "recipient": "Market Systems AG",
+          "street": "Marktweg 8",
+          "postal_code": "04109",
+          "city": "Leipzig",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Market Systems Stores",
+          "street": "Industrieweg 36",
+          "postal_code": "04347",
+          "city": "Leipzig",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "pia.schulz@example.test",
+        "telephone": "+49 341 2200 711",
+        "source_customer_id": "BUYER-0052"
+      },
+      "payment": {
+        "method": "Bank Transfer",
+        "status": "PAID",
+        "date": "2026-10-13",
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "CAB-USB-09",
+          "description": "USB Cable",
+          "quantity": "2",
+          "unit": "pcs",
+          "unit_net": "10.00",
+          "vat_percent": "19",
+          "discount_percent": "0",
+          "line_net": "20.00"
+        },
+        {
+          "sku": "CAB-USB-09",
+          "description": "USB Cable",
+          "quantity": "3",
+          "unit": "pcs",
+          "unit_net": "10.00",
+          "vat_percent": "19",
+          "discount_percent": "20",
+          "line_net": "24.00"
+        }
+      ],
+      "totals": {
+        "net": "44.00",
+        "vat": "8.36",
+        "gross": "52.36"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "validated",
+    "first_name": "Pia",
+    "last_name": "Schulz",
+    "product_gross": [
+      "11.90",
+      "11.90"
+    ],
+    "paid_amount": "52.36"
+  },
+  "scaled_moved": {
+    "raw": {
+      "external_reference": "PO-2026-0902-B32",
+      "order_date": "2026-09-02",
+      "currency": "EUR",
+      "customer": {
+        "company": "Grove Workshop GmbH",
+        "contact_name": "Jonas Meyer",
+        "first_name": null,
+        "last_name": null,
+        "alias": "GROVE-HQ",
+        "billing": {
+          "recipient": "Grove Workshop GmbH",
+          "street": "Parkstrasse 21",
+          "postal_code": "50667",
+          "city": "Cologne",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Grove Storage Depot",
+          "street": "Hafenweg 9",
+          "postal_code": "50735",
+          "city": "Cologne",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "jonas.meyer@example.test",
+        "telephone": "+49 221 9800 622",
+        "source_customer_id": "ACCOUNT-0871"
+      },
+      "payment": {
+        "method": "SEPA Direct Debit",
+        "status": "PAID",
+        "date": "2026-09-06",
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "BND-PACK-88",
+          "description": "Binder Pack",
+          "quantity": "5",
+          "unit": "pcs",
+          "unit_net": "12.00",
+          "vat_percent": "19",
+          "discount_percent": "0",
+          "line_net": "60.00"
+        },
+        {
+          "sku": "PAD-SKETCH-90",
+          "description": "Sketch Pad",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "15.00",
+          "vat_percent": "7",
+          "discount_percent": "0",
+          "line_net": "60.00"
+        },
+        {
+          "sku": "CAB-STOR-06",
+          "description": "Storage Cabinet",
+          "quantity": "2",
+          "unit": "pcs",
+          "unit_net": "100.00",
+          "vat_percent": "19",
+          "discount_percent": "10",
+          "line_net": "180.00"
+        }
+      ],
+      "totals": {
+        "net": "300.00",
+        "vat": "49.80",
+        "gross": "349.80"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "validated",
+    "first_name": "Jonas",
+    "last_name": "Meyer",
+    "product_gross": [
+      "14.28",
+      "16.05",
+      "119.00"
+    ],
+    "paid_amount": "349.80",
+    "scale": "0.8",
+    "offset": [
+      170,
+      130
+    ]
+  },
+  "missing_vat": {
+    "raw": {
+      "external_reference": "ALT-2026-0803-X09",
+      "order_date": "2026-08-03",
+      "currency": "EUR",
+      "customer": {
+        "company": "Harbor Studio Ltd",
+        "contact_name": "Lena Weber",
+        "first_name": null,
+        "last_name": null,
+        "alias": "HARBOR-MAIN",
+        "billing": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "lena.weber@example.test",
+        "telephone": "+49 351 1230 450",
+        "source_customer_id": "CLIENT-0024"
+      },
+      "payment": {
+        "method": "Credit Card",
+        "status": "UNPAID",
+        "date": null,
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "LMP-TASK-77",
+          "description": "Task Lamp",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "25.00",
+          "vat_percent": "?",
+          "discount_percent": "0",
+          "line_net": "100.00"
+        }
+      ],
+      "totals": {
+        "net": "100.00",
+        "vat": "19.00",
+        "gross": "119.00"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "review_required",
+    "issue_field": "items[0].vat_percent",
+    "render_options": {}
+  },
+  "unreadable_row": {
+    "raw": {
+      "external_reference": "ALT-2026-0803-X09",
+      "order_date": "2026-08-03",
+      "currency": "EUR",
+      "customer": {
+        "company": "Harbor Studio Ltd",
+        "contact_name": "Lena Weber",
+        "first_name": null,
+        "last_name": null,
+        "alias": "HARBOR-MAIN",
+        "billing": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "lena.weber@example.test",
+        "telephone": "+49 351 1230 450",
+        "source_customer_id": "CLIENT-0024"
+      },
+      "payment": {
+        "method": "Credit Card",
+        "status": "UNPAID",
+        "date": null,
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "LMP-TASK-77",
+          "description": "[UNREADABLE]",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "25.00",
+          "vat_percent": "19",
+          "discount_percent": "0",
+          "line_net": "100.00"
+        }
+      ],
+      "totals": {
+        "net": "100.00",
+        "vat": "19.00",
+        "gross": "119.00"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "review_required",
+    "issue_field": "items[0].description",
+    "render_options": {}
+  },
+  "ambiguous_name": {
+    "raw": {
+      "external_reference": "ALT-2026-0803-X09",
+      "order_date": "2026-08-03",
+      "currency": "EUR",
+      "customer": {
+        "company": "Harbor Studio Ltd",
+        "contact_name": "Ana Maria Silva",
+        "first_name": null,
+        "last_name": null,
+        "alias": "HARBOR-MAIN",
+        "billing": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "lena.weber@example.test",
+        "telephone": "+49 351 1230 450",
+        "source_customer_id": "CLIENT-0024"
+      },
+      "payment": {
+        "method": "Credit Card",
+        "status": "UNPAID",
+        "date": null,
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "LMP-TASK-77",
+          "description": "Task Lamp",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "25.00",
+          "vat_percent": "19",
+          "discount_percent": "0",
+          "line_net": "100.00"
+        }
+      ],
+      "totals": {
+        "net": "100.00",
+        "vat": "19.00",
+        "gross": "119.00"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "review_required",
+    "issue_field": "customer.contact_name",
+    "render_options": {}
+  },
+  "contradictory_total": {
+    "raw": {
+      "external_reference": "ALT-2026-0803-X09",
+      "order_date": "2026-08-03",
+      "currency": "EUR",
+      "customer": {
+        "company": "Harbor Studio Ltd",
+        "contact_name": "Lena Weber",
+        "first_name": null,
+        "last_name": null,
+        "alias": "HARBOR-MAIN",
+        "billing": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "lena.weber@example.test",
+        "telephone": "+49 351 1230 450",
+        "source_customer_id": "CLIENT-0024"
+      },
+      "payment": {
+        "method": "Credit Card",
+        "status": "UNPAID",
+        "date": null,
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "LMP-TASK-77",
+          "description": "Task Lamp",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "25.00",
+          "vat_percent": "19",
+          "discount_percent": "0",
+          "line_net": "100.00"
+        }
+      ],
+      "totals": {
+        "net": "100.00",
+        "vat": "19.00",
+        "gross": "420.00"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "review_required",
+    "issue_field": "totals.gross",
+    "render_options": {}
+  },
+  "swapped_date_reference": {
+    "raw": {
+      "external_reference": "2026-08-03",
+      "order_date": "ALT-2026-0803-X09",
+      "currency": "EUR",
+      "customer": {
+        "company": "Harbor Studio Ltd",
+        "contact_name": "Lena Weber",
+        "first_name": null,
+        "last_name": null,
+        "alias": "HARBOR-MAIN",
+        "billing": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "lena.weber@example.test",
+        "telephone": "+49 351 1230 450",
+        "source_customer_id": "CLIENT-0024"
+      },
+      "payment": {
+        "method": "Credit Card",
+        "status": "UNPAID",
+        "date": null,
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "LMP-TASK-77",
+          "description": "Task Lamp",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "25.00",
+          "vat_percent": "19",
+          "discount_percent": "0",
+          "line_net": "100.00"
+        }
+      ],
+      "totals": {
+        "net": "100.00",
+        "vat": "19.00",
+        "gross": "119.00"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "review_required",
+    "issue_field": "order_date",
+    "render_options": {}
+  },
+  "missing_reference_label": {
+    "raw": {
+      "external_reference": "ALT-2026-0803-X09",
+      "order_date": "2026-08-03",
+      "currency": "EUR",
+      "customer": {
+        "company": "Harbor Studio Ltd",
+        "contact_name": "Lena Weber",
+        "first_name": null,
+        "last_name": null,
+        "alias": "HARBOR-MAIN",
+        "billing": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "delivery": {
+          "recipient": "Harbor Studio Ltd",
+          "street": "Lindenweg 12",
+          "postal_code": "00421",
+          "city": "Dresden",
+          "country": "Germany",
+          "additional_name": null,
+          "address_specification": null,
+          "district": null
+        },
+        "email": "lena.weber@example.test",
+        "telephone": "+49 351 1230 450",
+        "source_customer_id": "CLIENT-0024"
+      },
+      "payment": {
+        "method": "Credit Card",
+        "status": "UNPAID",
+        "date": null,
+        "source_amount": null
+      },
+      "items": [
+        {
+          "sku": "LMP-TASK-77",
+          "description": "Task Lamp",
+          "quantity": "4",
+          "unit": "pcs",
+          "unit_net": "25.00",
+          "vat_percent": "19",
+          "discount_percent": "0",
+          "line_net": "100.00"
+        }
+      ],
+      "totals": {
+        "net": "100.00",
+        "vat": "19.00",
+        "gross": "119.00"
+      },
+      "overall_discount_percent": "0",
+      "shipping_net": "0",
+      "shipping_vat_percent": null
+    },
+    "expected_status": "review_required",
+    "issue_field": "external_reference",
+    "render_options": {
+      "omit_reference_label": true
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "Separate saved-contact compatibility probe on Fakturama 2.2.0; not the completed Order/Invoice demo.",
+  "source_files_sha256": {
+    "email-after-save-readback.json": "2c39aaeca475a95b29b70cd0b1c1f2461fe31992787a55d48e23307689cb8ee7",
+    "email-reopened-readback.json": "c03a6d8da850d6222f3de68a9286661395b19e52a8ee1e5d6424b00644122ca7"
+  },
+  "after_save": {
+    "source_email": "ava.stone@example.test",
+    "source_company": "M4 Probe Office",
+    "observed_after_one_Save": {
+      "Customer ID": "CUST000001",
+      "Company": "M4 Probe Office\t",
+      "E-Mail": "",
+      "Telephone": "+49 30 5550 9090"
+    }
+  },
+  "after_reopen": {
+    "source_email": "ava.stone@example.test",
+    "source_company": "M4 Probe Office",
+    "record_retrieved_through": "Debtors search + exact visible Stone occurrence; then verified generated Customer ID CUST000001",
+    "observed_after_reopen": {
+      "Customer ID": "CUST000001",
+      "Company": "M4 Probe Office\t",
+      "E-Mail": "",
+      "Telephone": "+49 30 5550 9090"
+    },
+    "Save_dispatches": 1,
+    "Order_Save_dispatches": 0,
+    "email_preserved": false,
+    "company_preserved": false
+  }
+}

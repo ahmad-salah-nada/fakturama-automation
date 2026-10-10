@@ -1,0 +1,71 @@
+{
+  "external_reference": "SHOP-2026-1010-R55",
+  "order_date": "2026-10-10",
+  "currency": "EUR",
+  "customer": {
+    "company": "Market Systems AG",
+    "contact_name": "Pia Schulz",
+    "first_name": null,
+    "last_name": null,
+    "alias": "MARKET-LEIPZIG",
+    "billing": {
+      "recipient": "Market Systems AG",
+      "street": "Marktweg 8",
+      "postal_code": "04109",
+      "city": "Leipzig",
+      "country": "Germany",
+      "additional_name": null,
+      "address_specification": null,
+      "district": null
+    },
+    "delivery": {
+      "recipient": "Market Systems Stores",
+      "street": "Industrieweg 36",
+      "postal_code": "04347",
+      "city": "Leipzig",
+      "country": "Germany",
+      "additional_name": null,
+      "address_specification": null,
+      "district": null
+    },
+    "email": "pia.schulz@example.com",
+    "telephone": "+49 341 2200 711",
+    "source_customer_id": "BUYER-0052"
+  },
+  "payment": {
+    "method": "Bank Transfer",
+    "status": "PAID",
+    "date": "2026-10-13",
+    "source_amount": null
+  },
+  "items": [
+    {
+      "sku": "\"SKU\"",
+      "description": "USB Cable",
+      "quantity": "2",
+      "unit": "pcs",
+      "unit_net": "10.00",
+      "vat_percent": "19",
+      "discount_percent": "0",
+      "line_net": "20.00"
+    },
+    {
+      "sku": "CAB-USB-09",
+      "description": "USB Cable",
+      "quantity": "3",
+      "unit": "pcs",
+      "unit_net": "10.00",
+      "vat_percent": "19",
+      "discount_percent": "20",
+      "line_net": "24.00"
+    }
+  ],
+  "totals": {
+    "net": "44.00",
+    "vat": "8.36",
+    "gross": "52.36"
+  },
+  "overall_discount_percent": "0",
+  "shipping_net": "0",
+  "shipping_vat_percent": null
+}

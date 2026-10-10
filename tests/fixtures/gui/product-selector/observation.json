@@ -1,0 +1,305 @@
+{
+  "status": "read",
+  "observations": [
+    {
+      "native": {
+        "role": "AXScrollArea",
+        "bounds": {
+          "x": 384.0,
+          "y": 188.0,
+          "width": 775.0,
+          "height": 439.0
+        },
+        "attribute_names": [
+          "AXHorizontalScrollBar",
+          "AXFrame",
+          "AXMakeScreenRectVisible",
+          "AXParent",
+          "AXChildren",
+          "AXFocused",
+          "AXSize",
+          "AXRole",
+          "AXTopLevelUIElement",
+          "AXHelp",
+          "AXChildrenInNavigationOrder",
+          "AXPosition",
+          "AXWindow",
+          "AXRoleDescription",
+          "AXVerticalScrollBar",
+          "AXContents"
+        ],
+        "scrollbars": {
+          "AXVerticalScrollBar": {
+            "code": -25212,
+            "value": null
+          },
+          "AXHorizontalScrollBar": {
+            "code": -25212,
+            "value": null
+          }
+        },
+        "no_vertical_scrollbar": true,
+        "no_horizontal_scrollbar": true
+      },
+      "initial_native": {
+        "role": "AXScrollArea",
+        "bounds": {
+          "x": 384.0,
+          "y": 188.0,
+          "width": 775.0,
+          "height": 439.0
+        },
+        "attribute_names": [
+          "AXHorizontalScrollBar",
+          "AXFrame",
+          "AXMakeScreenRectVisible",
+          "AXParent",
+          "AXChildren",
+          "AXFocused",
+          "AXSize",
+          "AXRole",
+          "AXTopLevelUIElement",
+          "AXHelp",
+          "AXChildrenInNavigationOrder",
+          "AXPosition",
+          "AXWindow",
+          "AXRoleDescription",
+          "AXVerticalScrollBar",
+          "AXContents"
+        ],
+        "scrollbars": {
+          "AXVerticalScrollBar": {
+            "code": -25212,
+            "value": null
+          },
+          "AXHorizontalScrollBar": {
+            "code": -25212,
+            "value": null
+          }
+        },
+        "no_vertical_scrollbar": true,
+        "no_horizontal_scrollbar": true,
+        "discovery": {
+          "hit_role": "AXScrollArea",
+          "parent_hops": 0
+        }
+      },
+      "table_box": [
+        52.0,
+        126.0,
+        1602.0,
+        1004.0
+      ],
+      "query": {
+        "label": "Search:",
+        "expected": "CHR-ERG-01",
+        "observed": "CHR-ERG-01",
+        "bounds": {
+          "x": 996.0,
+          "y": 158.0,
+          "width": 152.0,
+          "height": 21.0
+        },
+        "passed": true
+      },
+      "capture": {
+        "window_title": "Select a product",
+        "window_bounds": {
+          "x": 358.0,
+          "y": 125.0,
+          "width": 802.0,
+          "height": 552.0
+        },
+        "screen_rectangle": [
+          358,
+          125,
+          1160,
+          677
+        ],
+        "pid": 25683,
+        "pixel_width": 1604,
+        "pixel_height": 1104,
+        "pixels_per_screen_unit_x": 2.0,
+        "pixels_per_screen_unit_y": 2.0,
+        "display_id": 1
+      },
+      "post_read_guard_passed": true,
+      "readback_report": "evidence/milestone-4/demo-chair-cold-reopen2/product-selector-85ff30b5f7f0/table-cbde971840cc/readback.json",
+      "refreshed_capture": {
+        "window_title": "Select a product",
+        "window_bounds": {
+          "x": 358.0,
+          "y": 125.0,
+          "width": 802.0,
+          "height": 552.0
+        },
+        "screen_rectangle": [
+          358,
+          125,
+          1160,
+          677
+        ],
+        "pid": 25683,
+        "pixel_width": 1604,
+        "pixel_height": 1104,
+        "pixels_per_screen_unit_x": 2.0,
+        "pixels_per_screen_unit_y": 2.0,
+        "display_id": 1
+      }
+    },
+    {
+      "native": {
+        "role": "AXScrollArea",
+        "bounds": {
+          "x": 384.0,
+          "y": 188.0,
+          "width": 775.0,
+          "height": 439.0
+        },
+        "attribute_names": [
+          "AXHorizontalScrollBar",
+          "AXFrame",
+          "AXMakeScreenRectVisible",
+          "AXParent",
+          "AXChildren",
+          "AXFocused",
+          "AXSize",
+          "AXRole",
+          "AXTopLevelUIElement",
+          "AXHelp",
+          "AXChildrenInNavigationOrder",
+          "AXPosition",
+          "AXWindow",
+          "AXRoleDescription",
+          "AXVerticalScrollBar",
+          "AXContents"
+        ],
+        "scrollbars": {
+          "AXVerticalScrollBar": {
+            "code": -25212,
+            "value": null
+          },
+          "AXHorizontalScrollBar": {
+            "code": -25212,
+            "value": null
+          }
+        },
+        "no_vertical_scrollbar": true,
+        "no_horizontal_scrollbar": true
+      },
+      "initial_native": {
+        "role": "AXScrollArea",
+        "bounds": {
+          "x": 384.0,
+          "y": 188.0,
+          "width": 775.0,
+          "height": 439.0
+        },
+        "attribute_names": [
+          "AXHorizontalScrollBar",
+          "AXFrame",
+          "AXMakeScreenRectVisible",
+          "AXParent",
+          "AXChildren",
+          "AXFocused",
+          "AXSize",
+          "AXRole",
+          "AXTopLevelUIElement",
+          "AXHelp",
+          "AXChildrenInNavigationOrder",
+          "AXPosition",
+          "AXWindow",
+          "AXRoleDescription",
+          "AXVerticalScrollBar",
+          "AXContents"
+        ],
+        "scrollbars": {
+          "AXVerticalScrollBar": {
+            "code": -25212,
+            "value": null
+          },
+          "AXHorizontalScrollBar": {
+            "code": -25212,
+            "value": null
+          }
+        },
+        "no_vertical_scrollbar": true,
+        "no_horizontal_scrollbar": true,
+        "discovery": {
+          "hit_role": "AXScrollArea",
+          "parent_hops": 0
+        }
+      },
+      "table_box": [
+        52.0,
+        126.0,
+        1602.0,
+        1004.0
+      ],
+      "query": {
+        "label": "Search:",
+        "expected": "CHR-ERG-01",
+        "observed": "CHR-ERG-01",
+        "bounds": {
+          "x": 996.0,
+          "y": 158.0,
+          "width": 152.0,
+          "height": 21.0
+        },
+        "passed": true
+      },
+      "capture": {
+        "window_title": "Select a product",
+        "window_bounds": {
+          "x": 358.0,
+          "y": 125.0,
+          "width": 802.0,
+          "height": 552.0
+        },
+        "screen_rectangle": [
+          358,
+          125,
+          1160,
+          677
+        ],
+        "pid": 25683,
+        "pixel_width": 1604,
+        "pixel_height": 1104,
+        "pixels_per_screen_unit_x": 2.0,
+        "pixels_per_screen_unit_y": 2.0,
+        "display_id": 1
+      },
+      "post_read_guard_passed": true,
+      "readback_report": "evidence/milestone-4/demo-chair-cold-reopen2/product-selector-85ff30b5f7f0/table-010f94ce80fc/readback.json",
+      "refreshed_capture": {
+        "window_title": "Select a product",
+        "window_bounds": {
+          "x": 358.0,
+          "y": 125.0,
+          "width": 802.0,
+          "height": 552.0
+        },
+        "screen_rectangle": [
+          358,
+          125,
+          1160,
+          677
+        ],
+        "pid": 25683,
+        "pixel_width": 1604,
+        "pixel_height": 1104,
+        "pixels_per_screen_unit_x": 2.0,
+        "pixels_per_screen_unit_y": 2.0,
+        "display_id": 1
+      }
+    }
+  ],
+  "two_equal_observations": true,
+  "complete_native_view": true,
+  "limitations": [
+    "No scrolling or column resizing is implemented.",
+    "Equal observations do not prove all asynchronous work has finished.",
+    "A row click does not prove its selection or subsequent persistence."
+  ],
+  "report": "evidence/milestone-4/demo-chair-cold-reopen2/product-selector-85ff30b5f7f0/complete-table-b5b4ed0750d3.json"
+}

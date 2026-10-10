@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tjm-fakturama"
+version = "0.1.0"
+description = "Image extraction and validation for a UI-driven Fakturama workflow"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.12,<3",
+  "Pillow>=12,<13",
+  "numpy>=2,<3",
+]
+
+[project.optional-dependencies]
+ai = ["openai>=2,<3"]
+desktop = [
+  "opencv-python-headless>=4.10,<6; sys_platform == 'darwin'",
+  "pyobjc-core==12.2.2; sys_platform == 'darwin'",
+  "pyobjc-framework-ApplicationServices==12.2.2; sys_platform == 'darwin'",
+  "pyobjc-framework-Cocoa==12.2.2; sys_platform == 'darwin'",
+  "pyobjc-framework-Quartz==12.2.2; sys_platform == 'darwin'",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.14,<1"]
+
+[project.scripts]
+tjm = "tjm.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tjm"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
